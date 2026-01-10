@@ -4,6 +4,7 @@ import Nav from '../../components/Nav/page';
 
 const ContactPage = () => {
   return (
+    <>
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       <Nav/>
       <header className="px-8 pt-12 pb-16 max-w-7xl mx-auto text-center">
@@ -19,6 +20,11 @@ const ContactPage = () => {
       </header>
 
       <main className="max-w-7xl mx-auto px-8 pb-24">
+          <p className="text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+              We are actively looking for partners, engineers, pilot communities, investors, 
+              and dreamers who believe that deep engineering + thoughtful technology 
+              can solve shelter, food, and sustainability challenges at scale.
+          </p>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           
 
@@ -59,9 +65,9 @@ const ContactPage = () => {
             </form>
           </div>
 
-          {/* Contact Info & Founders */}
+
           <div className="space-y-8">
-            {/* The Duo - Direct Lines */}
+
             <div className="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
                <div className="absolute top-0 right-0 p-8 opacity-10">
                   <HardHat size={120} />
@@ -116,9 +122,10 @@ const ContactPage = () => {
 
         </div>
       </main>
+    </div>
       <footer className="px-8 py-12 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
-          <p className="text-slate-500 text-sm">© 2026 CivStack Innovations. Powered by Civil Eng & CS.</p>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-slate-500 text-sm">© 2026 CivStack Innovations. Depth in Engineering. Depth in Code.</p>
           <div className="flex gap-6 text-sm font-medium text-slate-600">
             <a href="#" className="hover:text-blue-600">LinkedIn</a>
             <a href="#" className="hover:text-blue-600">GitHub</a>
@@ -128,7 +135,7 @@ const ContactPage = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
