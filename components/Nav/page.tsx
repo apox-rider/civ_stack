@@ -19,6 +19,10 @@ export default function Nav() {
         router.push("/Contacts"); 
         setIsOpen(false); 
       };
+  const goToMvp = () => { 
+        router.push("/Mvp"); 
+        setIsOpen(false); 
+      };
 
   return (
     <>
@@ -51,7 +55,7 @@ export default function Nav() {
         </button>
 
 
-        <button className="hidden md:block bg-slate-900 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-600 transition">
+        <button onClick={goToMvp} className="hidden md:block bg-slate-900 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-600 transition">
           View MVP
         </button>
       </nav>
@@ -63,7 +67,7 @@ export default function Nav() {
             <button onClick={goToHome} className="hover:text-blue-600 transition">Home</button>
             <button onClick={goToAbout} className="hover:text-blue-600 transition">About us</button>
             <button onClick={goToContacts} className="hover:text-blue-600 transition">Contacts</button>
-            <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
+            <button onClick={goToMvp} className="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
               View MVP
             </button>
           </div>
