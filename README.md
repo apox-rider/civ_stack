@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ # CivStack
 
-## Getting Started
+**Where Civil Engineering Meets Digital Innovation**
 
-First, run the development server:
+<p align="center">
+  <img src="https://via.placeholder.com/1200x400/2563eb/ffffff?text=CivStack+-+Engineering+Depth+for+a+Sustainable+Tomorrow" alt="CivStack Banner" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+CivStack is a dual-discipline startup that fuses classical **structural & civil engineering** with modern **AI, IoT, digital twins, and full-stack software** to solve humanity's most pressing physical challenges:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Safe & resilient **Shelter**  
+- Efficient & climate-smart **Food production**  
+- Circular & sustainable **Clothing & materials** systems  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We build **Minimum Viable Products (MVPs)** in 2026–2028 that are practical, affordable, and impactful — especially in emerging and vulnerable communities.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Our North Star
 
-## Learn More
+> Technology must serve physical reality, not replace it.
 
-To learn more about Next.js, take a look at the following resources:
+### Mission (2026–2028)
+Create scalable, accessible engineering + software solutions that:
+- Reduce housing costs and increase disaster resilience by 30–40% through AI-powered design & monitoring  
+- Improve food security in water-scarce regions with smart structural + irrigation systems  
+- Transform agricultural waste into high-value textile materials via circular supply chain platforms  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Long-term Vision (2035)
+A world where:
+- Every new building is disaster-resilient by intelligent default  
+- Farming communities have predictive, offline-capable smart infrastructure  
+- 20+ million tons of agricultural waste become sustainable clothing fabric annually  
+- All powered by transparent, blockchain-enabled micro-financing & open technology stacks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Core Focus Areas
 
-## Deploy on Vercel
+| Area       | Problem We Solve                              | Our Approach                                      | Key Technologies                     |
+|------------|-----------------------------------------------|---------------------------------------------------|--------------------------------------|
+| **Shelter**   | 1.2B+ people need safe, affordable housing    | AI-driven BIM, digital twins, structural health monitoring | BIM, IoT sensors, AI optimization    |
+| **Food**      | Water scarcity + climate volatility           | Smart irrigation, vertical farming structures, predictive yield models | IoT automation, predictive AI, hydroponics |
+| **Clothing**  | Massive agricultural waste & linear fashion   | GIS-mapped circular supply chains, waste-to-textile platforms | Material simulation, blockchain tracking |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Guiding Principles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Impact First** — real-world human & environmental benefit over hype  
+- **Engineering Rigor** — physics and building codes are sacred  
+- **Radical Accessibility** — solutions built for emerging markets, offline-first, affordable  
+
+## The Team
+
+- **Innocent** — Civil Engineering Lead  
+  Structural integrity • Seismic design • Sustainable materials • Construction standards  
+
+- **Avith** — Technology Lead  
+  AI integration • IoT systems • Full-stack development • Digital twins  
+
+Two minds. One obsession: making the physical world safer, fairer, and more sustainable.
+
+## Current Status (January 2026)
+
+- Early-stage MVP development  
+- Focus: Shelter resilience tools + basic smart irrigation prototypes  
+- Preparing for first field pilots in East Africa (2026–2027)  
+- Building open-source components where appropriate  
+
+## Tech Stack (Evolving)
+
+- Frontend: Next.js / React / Tailwind CSS  
+- Backend: Node.js / Python (AI & data pipelines)  
+- AI/ML: PyTorch, custom structural models  
+- IoT & Sensors: Integration layer in development  
+- Infrastructure: Vercel / AWS / Digital Ocean (TBD)  
+
+## 📬 Get in Touch
+
+We’re always open to:
+- Engineers (civil, software, AI)  
+- Designers & product thinkers  
+- Potential pilot partners in vulnerable regions  
+- Investors who believe in deep, long-term impact  
+
+→ [Contact the Founders](#)  
+→ [LinkedIn](#)  
+→ [WhatsApp Business](#)  
+
+---
+
+© 2026 CivStack Innovations  
+**Depth in Engineering. Depth in Code.**
