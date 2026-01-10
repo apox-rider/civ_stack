@@ -78,9 +78,9 @@ We’re always open to:
 - Potential pilot partners in vulnerable regions  
 - Investors who believe in deep, long-term impact  
 
-→ [Contact the Founders](#)  
-→ [LinkedIn](#)  
-→ [WhatsApp Business](#)  
+→ [Contact the Founders](apolinaryavith@gmail.com)  
+→ [LinkedIn](https://www.linkedin.com/in/avith-apolinary-52a651396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)  
+→ [WhatsApp Business]()  
 
 ---
 
