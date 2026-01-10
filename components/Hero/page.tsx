@@ -4,10 +4,6 @@ import { HardHat, Code, Building2, Sprout, Shirt, BarChart3, ArrowRight } from '
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
-      {/* Navigation */}
-      
-
-      {/* Hero Section */}
       <header className="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto text-center">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,#e2e8f0_0%,#f8fafc_100%)] opacity-50" />
         <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">
@@ -22,22 +18,22 @@ const LandingPage = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
-            Explore Solutions <ArrowRight size={20} />
+            <a href='#solutions'>Explore Solutions<ArrowRight size={20} /></a>
           </button>
           <button className="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition">
-            Contact the Founders
+            <a href='/Contacts'>Contact the Founders</a>
           </button>
         </div>
       </header>
 
-      {/* Solutions Grid */}
+
       <section id="solutions" className="px-8 py-24 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Core Focus Areas</h2>
+          <h2 id='solutions' className="text-3xl font-bold mb-4">Core Focus Areas</h2>
           <p className="text-slate-500 mb-12 max-w-xl">Leveraging diploma-level expertise to create Minimum Viable Products for 2026's high-demand markets.</p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Shelter */}
+
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Building2 className="text-blue-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Shelter</h3>
@@ -48,7 +44,7 @@ const LandingPage = () => {
               </ul>
             </div>
 
-            {/* Food */}
+
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Sprout className="text-green-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Food</h3>
@@ -59,7 +55,7 @@ const LandingPage = () => {
               </ul>
             </div>
 
-            {/* Clothing */}
+
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Shirt className="text-orange-500 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Clothing</h3>
@@ -73,7 +69,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* The Duo Section */}
+
       <section id="about" className="px-8 py-24 bg-slate-900 text-white overflow-hidden relative">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -103,7 +99,7 @@ const LandingPage = () => {
             <div className="aspect-square bg-slate-800 rounded-3xl border border-slate-700 relative z-10 flex items-center justify-center">
               <span className="text-slate-500 italic uppercase tracking-widest"> 
                 <div className="relative z-10 bg-slate-800/50 backdrop-blur-xl border border-slate-700 rounded-3xl p-6 shadow-2xl overflow-hidden group">
-                    {/* Decorative Header */}
+
                     <div className="flex gap-2 mb-6">
                         <div className="w-3 h-3 rounded-full bg-red-500/50" />
                         <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
@@ -129,7 +125,7 @@ const LandingPage = () => {
                         </div>
                     </div>
 
-                    {/* Bottom Terminal Section */}
+
                     <div className="mt-6 font-mono text-[12px] space-y-1">
                         <p className="text-green-400">{">"} Initializing AI Structural Audit...</p>
                         <p className="text-slate-400">{">"} Sensor nodes 1-12 active. Connection stable.</p>
@@ -142,7 +138,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Finance Section */}
+
       <section id="finance" className="px-8 py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
           <BarChart3 className="mx-auto text-blue-600 mb-6 " size={48} />
@@ -163,7 +159,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
+
       <footer className="px-8 py-12 border-t border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
           <p className="text-slate-500 text-sm">© 2026 CivStack Innovations. Powered by Civil Eng & CS.</p>
