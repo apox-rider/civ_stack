@@ -8,12 +8,12 @@ import Nav from '../../components/Nav/page';
 const ContactPage = () => {
   const form = useRef<HTMLFormElement>(null)
 
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setStatus('loading')
+    setStatus('sending')
 
     const serviceId=process.env.REACT_APP_SERVICE_ID
     if (!form.current) return
@@ -121,26 +121,21 @@ const ContactPage = () => {
             />
           </div>
 
-          <button
-            type="submit"
-            disabled={status === 'loading'}
-            className={`
-              w-full py-4 px-8 rounded-xl font-bold text-lg transition-all
-              ${status === 'loading' 
-                ? 'bg-slate-400 cursor-not-allowed' 
-                : 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl'
-              }
-            `}
-          >
-            {status === 'loading' ? 'Sending...' : 'Send Message'}
-          </button>
+          <button 
+                type="submit" 
+                disabled={status === 'sending'}
+                className={`w-full text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-[1.01] 
+                    ${status === 'sending' ? 'bg-gray-400 cursor-not-allowed' : 'bg-emerald-600 hover:bg-emerald-700'}`}
+            >
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
+            </button>
 
-          {status === 'success' && (
-            <p className="text-green-600 text-center mt-4 font-medium">{message}</p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-600 text-center mt-4 font-medium">{message}</p>
-          )}
+            {status === 'success' && (
+                <p className="text-emerald-600 font-medium text-center bg-emerald-50 py-2 rounded">Message sent successfully!</p>
+            )}
+            {status === 'error' && (
+                <p className="text-red-600 font-medium text-center bg-red-50 py-2 rounded">Something went wrong. Please try again.</p>
+            )}
             </form>
           </div>
 
