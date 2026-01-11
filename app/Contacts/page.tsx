@@ -158,7 +158,7 @@ const ContactPage = () => {
                     <div>
                       <p className="text-blue-400 text-xs font-mono uppercase tracking-widest mb-1">Civil Lead</p>
                       <h4 className="font-bold text-lg">Innocent</h4>
-                      <p className="text-slate-400 text-sm">innocent@civstack.com</p>
+                      <p className="text-slate-400 text-sm">Innocent@civstack.com</p>
                     </div>
                   </div>
 
@@ -169,7 +169,7 @@ const ContactPage = () => {
                     <div>
                       <p className="text-blue-400 text-xs font-mono uppercase tracking-widest mb-1">Tech Lead</p>
                       <h4 className="font-bold text-lg">Avith</h4>
-                      <p className="text-slate-400 text-sm">avith@civstack.com</p>
+                      <p className="text-slate-400 text-sm">Avith@civstack.com</p>
                     </div>
                   </div>
                </div>
