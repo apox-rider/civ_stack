@@ -1,8 +1,44 @@
+'use client'
 import React from 'react';
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import { Mail, MessageSquare, Phone, Send, HardHat, Code, MapPin, ArrowLeft } from 'lucide-react';
 import Nav from '../../components/Nav/page';
 
 const ContactPage = () => {
+  const form = useRef<HTMLFormElement>(null)
+
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [message, setMessage] = useState('')
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setStatus('loading')
+
+    const serviceId=process.env.REACT_APP_SERVICE_ID
+    if (!form.current) return
+    emailjs.sendForm(
+        process.env.EMAILJS_SERVICE_ID!,     // ← works because it's client-side but value is injected at build/deploy
+        process.env.EMAILJS_TEMPLATE_ID!,
+        form.current!,
+        process.env.EMAILJS_PUBLIC_KEY!
+        )
+      .then(
+        () => {
+          setStatus('success')
+          setMessage('Message sent successfully! We will get back to you soon.')
+          form.current?.reset()
+        },
+        (error) => {
+          console.error(error)
+          setStatus('error')
+          setMessage('Something went wrong. Please try again or Civ-Stack directly.')
+        }
+      )
+      .finally(() => {
+        setTimeout(() => setStatus('idle'), 5000)
+      })
+  }
   return (
     <>
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
@@ -33,35 +69,78 @@ const ContactPage = () => {
               <MessageSquare className="text-blue-600" /> Send a Message
             </h3>
             <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="John Doe" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="john@example.com" />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Interest Area</label>
-                <select className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition">
-                  <option>Shelter & Infrastructure</option>
-                  <option>Agricultural Tech (Food)</option>
-                  <option>Smart Textiles (Clothing)</option>
-                  <option>Fintech/Cosmic™️ Integration</option>
-                </select>
-              </div>
+              <div className="grid md:grid-cols-2 gap-6"/>
+                 <div>
+            <label htmlFor="user_name" className="block text-sm font-medium text-slate-700 mb-1">
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="user_name"
+              id="user_name"
+              required
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            />
+          </div>
 
-              <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Your Project Details</label>
-                <textarea rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Tell us about your project..."></textarea>
-              </div>
+          <div>
+            <label htmlFor="user_email" className="block text-sm font-medium text-slate-700 mb-1">
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              required
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            />
+          </div>
 
-              <button className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
-                Send Proposal <Send size={20} />
-              </button>
+          <div>
+            <label htmlFor="user_phone" className="block text-sm font-medium text-slate-700 mb-1">
+              Phone (optional)
+            </label>
+            <input
+              type="tel"
+              name="user_phone"
+              id="user_phone"
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+              Your Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              rows={6}
+              required
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={status === 'loading'}
+            className={`
+              w-full py-4 px-8 rounded-xl font-bold text-lg transition-all
+              ${status === 'loading' 
+                ? 'bg-slate-400 cursor-not-allowed' 
+                : 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl'
+              }
+            `}
+          >
+            {status === 'loading' ? 'Sending...' : 'Send Message'}
+          </button>
+
+          {status === 'success' && (
+            <p className="text-green-600 text-center mt-4 font-medium">{message}</p>
+          )}
+          {status === 'error' && (
+            <p className="text-red-600 text-center mt-4 font-medium">{message}</p>
+          )}
             </form>
           </div>
 
