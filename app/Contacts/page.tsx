@@ -67,7 +67,7 @@ const ContactPage = () => {
               <div className="grid md:grid-cols-2 gap-6"/>
                  <div>
             <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
-              Full Name
+              Full-Name
             </label>
             <input
               type="text"
