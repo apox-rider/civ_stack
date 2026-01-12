@@ -30,7 +30,7 @@ const ContactPage = () => {
             (error) => {
                 console.error(error.text);
                 setStatus('error');
-                setMessage('Something went wrong. Please try again or Contact Civ-Stack directly.')
+                setMessage('Something went wrong. Please try again or directly Contact Civ-Stack.')
             });
     };
 
