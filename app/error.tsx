@@ -64,13 +64,13 @@ export default function Error({
 
         <div className="space-y-3 text-slate-500">
           <p className="text-lg font-medium">
-            Don't worry — we're building better systems every day.
+            Don't worry — we're building better systems every day to upgrade our services.
           </p>
           <p className="text-sm">
             Error ID: {error.digest || 'unknown'} • CivStack Engineering Team
           </p>
           <p className="text-sm mt-6 italic">
-            © 2026 CivStack — Depth in Engineering. Depth in Code.
+            © 2026 Civ_Stack — Depth in Engineering. Depth in Code.
           </p>
         </div>
       </div>
