@@ -43,13 +43,13 @@ export default function Error({
           Please be patient and try again later 
         </p>
 
-        {/* Quick actions */}
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
           <button
             onClick={reset}
             className="group bg-blue-600 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex items-center gap-2"
           >
-            Retry Loading
+            Re-Load
             <span className="text-xl">⟳</span>
           </button>
 
