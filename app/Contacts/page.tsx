@@ -17,9 +17,9 @@ const ContactPage = () => {
     if (!form.current) return
     setStatus('sending')
 
-        const SERVICE_ID = process.env.EMAILJS_SERVICE_ID!;
-        const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID!;
-        const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+        const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+        const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+        const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID,form.current,PUBLIC_KEY)
             .then(() => {
