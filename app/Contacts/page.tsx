@@ -18,7 +18,7 @@ const ContactPage = () => {
     const serviceId=process.env.REACT_APP_SERVICE_ID
     if (!form.current) return
     emailjs.sendForm(
-        process.env.EMAILJS_SERVICE_ID!,     // ← works because it's client-side but value is injected at build/deploy
+        process.env.EMAILJS_SERVICE_ID!,     
         process.env.EMAILJS_TEMPLATE_ID!,
         form.current!,
         process.env.EMAILJS_PUBLIC_KEY!
@@ -68,7 +68,7 @@ const ContactPage = () => {
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <MessageSquare className="text-blue-600" /> Send a Message
             </h3>
-            <form className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6"/>
                  <div>
             <label htmlFor="user_name" className="block text-sm font-medium text-slate-700 mb-1">
