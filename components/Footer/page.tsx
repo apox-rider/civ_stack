@@ -10,6 +10,7 @@ export default function Footer(){
                     <a href="#" className="hover:text-blue-600">LinkedIn</a>
                     <a href="#" className="hover:text-blue-600">GitHub</a>
                     <a href="#" className="hover:text-blue-600">Documentation</a>
+                    <a href="#" className="hover:text-blue-600">WhatsApp</a>
                 </div>
                 </div>
             </footer>
