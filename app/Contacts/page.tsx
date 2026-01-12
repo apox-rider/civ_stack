@@ -12,33 +12,28 @@ const ContactPage = () => {
   const [message, setMessage] = useState('')
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
+
+    if (!form.current) return
     setStatus('sending')
 
-    const serviceId=process.env.REACT_APP_SERVICE_ID
-    if (!form.current) return
-    emailjs.sendForm(
-        process.env.EMAILJS_SERVICE_ID!,     
-        process.env.EMAILJS_TEMPLATE_ID!,
-        form.current!,
-        process.env.EMAILJS_PUBLIC_KEY!
-        )
-      .then(
-        () => {
-          setStatus('success')
-          setMessage('Message sent successfully! We will get back to you soon.')
-          form.current?.reset()
-        },
-        (error) => {
-          console.error(error)
-          setStatus('error')
-          setMessage('Something went wrong. Please try again or Civ-Stack directly.')
-        }
-      )
-      .finally(() => {
-        setTimeout(() => setStatus('idle'), 5000)
-      })
-  }
+        const SERVICE_ID = process.env.EMAILJS_SERVICE_ID!;
+        const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID!;
+        const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID,form.current,PUBLIC_KEY)
+            .then(() => {
+                setStatus('success');
+                setMessage('Message sent successfully! We will get back to you soon.')
+                if (form.current) form.current.reset();
+            }, 
+            (error) => {
+                console.error(error.text);
+                setStatus('error');
+                setMessage('Something went wrong. Please try again or Contact Civ-Stack directly.')
+            });
+    };
+
   return (
     <>
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
@@ -71,39 +66,54 @@ const ContactPage = () => {
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6"/>
                  <div>
-            <label htmlFor="user_name" className="block text-sm font-medium text-slate-700 mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
               Full Name
             </label>
             <input
               type="text"
-              name="user_name"
-              id="user_name"
+              name="name"
+              id="name"
+              placeholder='Peter Pan'
               required
               className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
 
           <div>
-            <label htmlFor="user_email" className="block text-sm font-medium text-slate-700 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
               Email Address
             </label>
             <input
               type="email"
-              name="user_email"
-              id="user_email"
+              name="email"
+              id="email"
+              placeholder='you@gmail.com'
               required
               className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
 
           <div>
-            <label htmlFor="user_phone" className="block text-sm font-medium text-slate-700 mb-1">
-              Phone (optional)
+            <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+              Phone
             </label>
             <input
               type="tel"
-              name="user_phone"
-              id="user_phone"
+              name="phone"
+              id="phone"
+              placeholder='+255 712356781'
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+              Title
+            </label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder='What is your message about? '
               className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
@@ -117,6 +127,7 @@ const ContactPage = () => {
               id="message"
               rows={6}
               required
+              placeholder='Start writing...'
               className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
             />
           </div>
@@ -137,6 +148,7 @@ const ContactPage = () => {
                 <p className="text-red-600 font-medium text-center bg-red-50 py-2 rounded">Something went wrong. Please try again.</p>
             )}
             </form>
+             
           </div>
 
 
