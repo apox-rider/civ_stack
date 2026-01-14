@@ -1,20 +1,40 @@
-export default function Footer(){
+import { Si1Dot1Dot1Dot1, SiGithub, SiInstagram, SiLinkedin, SiStackbit, SiTheboringcompany, SiWhatsapp, SiYoutube } from "react-icons/si";
+
+ export default function Footer(){
     return(
         <>
-        <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
-            {/* Footer */}
-            <footer className="px-8 py-12 border-t border-slate-200 bg-white sticky">
-                <div className="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
-                <p className="text-slate-500 text-sm">© 2026 CivStack Innovations. Powered by Civil Eng & CS.</p>
-                <div className="flex gap-6 text-sm font-medium text-slate-600">
-                    <a href="#" className="hover:text-blue-600">LinkedIn</a>
-                    <a href="#" className="hover:text-blue-600">GitHub</a>
-                    <a href="#" className="hover:text-blue-600">Documentation</a>
-                    <a href="#" className="hover:text-blue-600">WhatsApp</a>
-                </div>
-                </div>
-            </footer>
-        </div>
+         <footer className="bg-linear-to-r from-gray-900 to-gray-800 text-gray-300 py-10 px-6 mt-auto">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+            <div className="text-center md:text-left">
+              <p className="text-lg font-semibold text-white tracking-wide font-serif">
+                Civ-Stack
+              </p>
+              <p className="text-sm mt-1 opacity-80">
+                © {new Date().getFullYear()} All rights reserved
+              </p>
+            </div>
+
+
+            <div className="flex justify-center gap-8 text-sm">
+              <button  className="hover:text-emerald-400 transition-colors"><SiStackbit size={50}/></button>
+              <button  className="hover:text-emerald-400 transition-colors">Co-orp</button>
+            </div>
+
+
+            <div className="flex justify-center md:justify-end gap-6">
+              
+              <div className="flex gap-6 text-sm font-medium text-slate-600">
+            <a href="#" className="hover:text-blue-600"><SiLinkedin size={35}/></a>
+            <a href="#" className="hover:text-blue-600"><SiGithub size={35}/></a>
+            <a href="#" className="hover:text-blue-600"><SiYoutube size={35}/></a>
+            <a href="#" className="hover:text-blue-600"><SiInstagram size={35}/></a>
+            <a href="#" className="hover:text-blue-600"><SiWhatsapp size={35}/></a>
+          </div>
+
+            </div>
+          </div>
+        </footer>
         </>
     )
-}
+};

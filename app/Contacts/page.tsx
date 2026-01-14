@@ -4,6 +4,9 @@ import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { Mail, MessageSquare, Phone, Send, HardHat, Code, MapPin, ArrowLeft } from 'lucide-react';
 import Nav from '../../components/Nav/page';
+import { SiGithub, SiInstagram, SiLinkedin, SiMailboxdotorg, SiWhatsapp, SiYoutube } from 'react-icons/si';
+import { BiSolidLocationPlus, BiSolidPhoneCall } from 'react-icons/bi';
+import Footer from '@/components/Footer/page';
 
 const ContactPage = () => {
   const form = useRef<HTMLFormElement>(null)
@@ -191,17 +194,24 @@ const ContactPage = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
-                  <Phone size={20} />
+                  <BiSolidPhoneCall size={20} />
                 </div>
                 <h4 className="font-bold">Call Us</h4>
-                <p className="text-sm text-slate-500">+255 123 456 789</p>
+                <p className="text-sm text-slate-500">+255 760 706 872</p>
               </div>
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
-                  <MapPin size={20} />
+                  <SiMailboxdotorg size={20} />
+                </div>
+                <h4 className="font-bold">Email</h4>
+                <p className="text-sm text-slate-500">civ-stack@coorp.tz</p>
+              </div>
+              <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
+                <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
+                  <BiSolidLocationPlus size={20} />
                 </div>
                 <h4 className="font-bold">Headquarters</h4>
-                <p className="text-sm text-slate-500">Innovation Hub, 2026</p>
+                <p className="text-sm text-slate-500"><a href='https://www.google.com/maps/place/Mbeya/@-8.9051287,33.4112508,13z/data=!3m1!4b1!4m6!3m5!1s0x1900a01e711399cd:0x4012f53f751f23a5!8m2!3d-8.9094014!4d33.4607744!16zL20vMDc0eHRt?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D'>Tanzania</a></p>
               </div>
             </div>
           </div>
@@ -209,18 +219,7 @@ const ContactPage = () => {
         </div>
       </main>
     </div>
-      <footer className="px-8 py-12 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-500 text-sm">© 2026 CivStack Innovations. Depth in Engineering. Depth in Code.</p>
-          <div className="flex gap-6 text-sm font-medium text-slate-600">
-            <a href="#" className="hover:text-blue-600">LinkedIn</a>
-            <a href="#" className="hover:text-blue-600">GitHub</a>
-            <a href="#" className="hover:text-blue-600">Youtube</a>
-            <a href="#" className="hover:text-blue-600">Instagram</a>
-            <a href="#" className="hover:text-blue-600">Whatsapp</a>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </>
   );
 };

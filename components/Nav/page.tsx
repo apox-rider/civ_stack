@@ -26,10 +26,10 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-4 sm:px-8 py-4 sm:py-6 bg-amber-200 border-b border-slate-200 sticky top-0 z-50">
+      <nav className="flex justify-between items-center px-4 sm:px-8 py-4 sm:py-6 bg-linear-to-r from-slate-900 to-slate-900 bg- sticky top-0 z-50">
         <div className="text-2xl font-bold tracking-tighter flex items-center gap-2">
           <div className="bg-blue-600 text-white p-1 rounded">Civ</div>
-          <span className="text-black">Stack</span>
+          <span className="text-white">Stack</span>
         </div>
 
 
@@ -67,7 +67,7 @@ export default function Nav() {
             <button onClick={goToHome} className="hover:text-blue-600 transition">Home</button>
             <button onClick={goToAbout} className="hover:text-blue-600 transition">About us</button>
             <button onClick={goToContacts} className="hover:text-blue-600 transition">Contacts</button>
-            <button onClick={goToMvp} className="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
+            <button onClick={goToMvp} className="bg-red-300 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
               View MVP
             </button>
           </div>
