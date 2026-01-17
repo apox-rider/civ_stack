@@ -190,7 +190,7 @@ const ContactPage = () => {
                </div>
             </div>
 
-            {/* Quick Contact Cards */}
+
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
@@ -212,6 +212,27 @@ const ContactPage = () => {
                 </div>
                 <h4 className="font-bold">Headquarters</h4>
                 <p className="text-sm text-slate-500"><a href='https://www.google.com/maps/place/Mbeya/@-8.9051287,33.4112508,13z/data=!3m1!4b1!4m6!3m5!1s0x1900a01e711399cd:0x4012f53f751f23a5!8m2!3d-8.9094014!4d33.4607744!16zL20vMDc0eHRt?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D'>Tanzania</a></p>
+              </div>
+              <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
+                <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
+                  <SiInstagram size={20} />
+                </div>
+                <h4 className="font-bold">Civ-Stack Developers</h4>
+                <p className="text-sm text-slate-500"><a href='https://www.instagram.com/dotenv3?igsh=MWljbnRocnJyMjR6eQ%3D%3D&utm_source=qr'>dotenv3</a></p>
+              </div>
+              <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
+                <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
+                  <SiGithub size={20} />
+                </div>
+                <h4 className="font-bold">Civ-Stack Developers</h4>
+                <p className="text-sm text-slate-500"><a href=''>civ-stack.dev</a></p>
+              </div>
+              <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
+                <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
+                  <SiLinkedin size={20} />
+                </div>
+                <h4 className="font-bold">Civ-Stack Developers</h4>
+                <p className="text-sm text-slate-500"><a href=''>civ-stack.dev</a></p>
               </div>
             </div>
           </div>
