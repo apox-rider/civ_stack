@@ -67,7 +67,7 @@ export default function Nav() {
             <button onClick={goToHome} className="hover:text-blue-600 transition">Home</button>
             <button onClick={goToAbout} className="hover:text-blue-600 transition">About us</button>
             <button onClick={goToContacts} className="hover:text-blue-600 transition">Contacts</button>
-            <button onClick={goToMvp} className="bg-red-300 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
+            <button onClick={goToMvp} className="bg-blue-300 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
               View MVP
             </button>
           </div>
