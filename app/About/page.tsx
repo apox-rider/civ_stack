@@ -140,14 +140,14 @@ const AboutUsPage = () => {
               <div className="flex gap-5">
                 <div className="bg-blue-600/30 p-4 rounded-xl"><HardHat className="text-blue-400" size={40} /></div>
                 <div>
-                  <h4 className="text-2xl font-bold">Innocent — Civil Engineering Lead</h4>
+                  <h4 className="text-2xl font-bold">Innocent— Civil Engineering Lead</h4>
                   <p className="text-slate-400 mt-1">Structural integrity, seismic design, sustainable materials, and real-world construction standards.</p>
                 </div>
               </div>
               <div className="flex gap-5">
                 <div className="bg-blue-600/30 p-4 rounded-xl"><Code className="text-blue-400" size={40} /></div>
                 <div>
-                  <h4 className="text-2xl font-bold">Avith — Technology Lead</h4>
+                  <h4 className="text-2xl font-bold">Avith— Technology Lead</h4>
                   <p className="text-slate-400 mt-1">AI model integration, IoT systems, full-stack development, and scalable digital twins.</p>
                 </div>
               </div>
