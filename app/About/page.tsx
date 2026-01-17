@@ -12,7 +12,7 @@ const AboutUsPage = () => {
       <header className="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto text-center">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,#e2e8f0_0%,#f8fafc_100%)] opacity-50" />
         <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">
-          Who We Are & Where We're Going
+          Who we Are & Where we're Going
         </span>
         <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
           CivStack — Engineering <span className="text-blue-600">Depth</span> <br />
