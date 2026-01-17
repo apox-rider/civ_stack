@@ -62,7 +62,7 @@ export default function Nav() {
 
 
       {isOpen && (
-        <div className="md:hidden bg-amber-200 border-b border-slate-200">
+        <div className="md:hidden bg-blue-200 border-b border-slate-200">
           <div className="flex flex-col items-center gap-6 py-6 font-medium text-slate-600">
             <button onClick={goToHome} className="hover:text-blue-600 transition">Home</button>
             <button onClick={goToAbout} className="hover:text-blue-600 transition">About us</button>
