@@ -57,7 +57,7 @@ const AboutUsPage = () => {
               <div className="flex gap-5">
                 <div className="bg-green-100 p-4 rounded-xl shrink-0"><Globe className="text-green-600" size={32} /></div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Vision 2035</h3>
+                  <h3 className="text-2xl font-bold mb-2">Vision 2030's</h3>
                   <p className="text-slate-600">
                     A world where every new building is disaster-resilient by design, every farming community has predictive smart infrastructure, and agricultural waste becomes high-value clothing material — all powered by transparent, accessible technology stacks.
                   </p>
