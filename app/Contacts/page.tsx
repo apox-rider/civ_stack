@@ -240,7 +240,7 @@ const ContactPage = () => {
         </div>
       </main>
     </div>
-      <Footer/>
+    <Footer/>
     </>
   );
 };

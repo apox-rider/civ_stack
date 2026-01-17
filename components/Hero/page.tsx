@@ -108,19 +108,19 @@ const LandingPage = () => {
                         <span className="text-[10px] text-slate-500 ml-2 font-mono uppercase tracking-widest">Structural_Analysis_v1.0.app</span>
                     </div>
 
-                    {/* The "Blueprint" Grid */}
+
                     <div className="relative h-64 w-full bg-slate-900 rounded-lg border border-slate-700 flex items-center justify-center overflow-hidden">
-                        {/* Grid Background */}
+
                         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[20px_20px]" />
                         
-                        {/* Mock 3D Structure (SVG) */}
+
                         <svg width="200" height="120" viewBox="0 0 200 120" className="relative z-10 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">
                         <path d="M20,100 L180,100 L150,40 L50,40 Z" fill="none" stroke="#3b82f6" strokeWidth="2" />
                         <path d="M50,40 L100,10 L150,40" fill="none" stroke="#3b82f6" strokeWidth="2" />
                         <circle cx="100" cy="10" r="3" fill="#ef4444" className="animate-ping" />
                         </svg>
 
-                        {/* Floating Data Tags */}
+
                         <div className="absolute top-4 right-4 bg-blue-600/20 border border-blue-500/50 p-2 rounded text-[10px] font-mono text-blue-400">
                         LIVE_STRESS: 0.042%
                         </div>
@@ -159,8 +159,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-
      <Footer/>
     </div>
   );
