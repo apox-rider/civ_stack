@@ -144,12 +144,12 @@ const LandingPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <BarChart3 className="mx-auto text-blue-600 mb-6 " size={48} />
           <h2 className="text-3xl font-bold mb-6 ">Integrated Fintech</h2>
-          <p className="text-slate-600 text-lg mb-10">
+          <div className="text-slate-600 text-lg mb-10">
             We don't just build structures; we build accessibility. Every solution comes with embedded micro-financing and blockchain-based transparency. <br/>Our main resource is the <br/>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <button className='bg-amber-200 text-amber-800 px-8 py-4 rounded-xl font-bold text-lg shadow-lg  hover:bg-amber-300 transition flex items-center justify-center cursor-pointer'>Cosmic™️</button>
             </div>
-          </p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
             {['Micro-Loans', 'Blockchain Pay', 'SBA Grant Ready', 'Crowdfunded'].map((item) => (
               <div key={item} className="bg-white p-4 rounded-lg border border-slate-200 text-sm font-bold shadow-sm hover:text-blue-600 cursor-pointer">

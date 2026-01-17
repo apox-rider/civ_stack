@@ -1,15 +1,15 @@
-// app/not-found.tsx
+
 import Link from 'next/link';
 import { ArrowLeft, HardHat, Construction } from 'lucide-react';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center px-6 py-24 text-center">
-      {/* Subtle background gradient matching your hero sections */}
+
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,#e2e8f0_0%,#f8fafc_100%)] opacity-60 pointer-events-none" />
 
       <div className="relative max-w-2xl">
-        {/* Big 404 with engineering twist */}
+
         <div className="relative">
           <h1 className="text-[12rem] md:text-[16rem] font-black text-blue-600/10 tracking-tighter select-none">
             404
@@ -28,7 +28,7 @@ export default function NotFound() {
           was moved to another foundation, or got lost during construction.
         </p>
 
-        {/* Engineering-themed message */}
+
         <div className="mt-10 inline-flex items-center gap-3 px-6 py-4 bg-amber-100/60 backdrop-blur-sm rounded-xl border border-amber-200 text-slate-700">
           <HardHat className="text-amber-600" size={28} />
           <span className="font-medium">
@@ -36,7 +36,7 @@ export default function NotFound() {
           </span>
         </div>
 
-        {/* Action buttons */}
+
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
           <Link
             href="/"
@@ -54,7 +54,7 @@ export default function NotFound() {
           </Link>
         </div>
 
-        {/* Small easter egg / branding line */}
+
         <p className="mt-16 text-sm text-slate-500/70">
           CivStack — Building the future, one stable foundation at a time
         </p>
