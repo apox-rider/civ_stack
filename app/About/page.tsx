@@ -157,7 +157,7 @@ const AboutUsPage = () => {
           <div className="relative hidden lg:block">
 
             <div className="aspect-square bg-linear-to-br from-blue-900 to-slate-950 rounded-3xl flex items-center justify-center">
-              <span className="text-6xl font-black text-blue-600/30 tracking-widest">CIVSTACK</span>
+              <span className="text-6xl font-black text-blue-600/30 tracking-widest animate-ping">CIVSTACK</span>
             </div>
           </div>
         </div>

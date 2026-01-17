@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { Mail, MessageSquare, Phone, Send, HardHat, Code, MapPin, ArrowLeft } from 'lucide-react';
 import Nav from '../../components/Nav/page';
-import { SiGithub, SiInstagram, SiLinkedin, SiMailboxdotorg, SiWhatsapp, SiYoutube } from 'react-icons/si';
+import { SiGithub, SiGooglemessages, SiImessage, SiInstagram, SiLinkedin, SiMailboxdotorg, SiWhatsapp, SiYoutube } from 'react-icons/si';
 import { BiSolidLocationPlus, BiSolidPhoneCall } from 'react-icons/bi';
 import Footer from '@/components/Footer/page';
 
@@ -64,7 +64,7 @@ const ContactPage = () => {
 
           <div className="bg-white p-8 lg:p-10 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <MessageSquare className="text-blue-600" /> Send a Message
+              <SiGooglemessages className="text-blue-600" /> Send a Message
             </h3>
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6"/>
@@ -139,13 +139,13 @@ const ContactPage = () => {
                 type="submit" 
                 disabled={status === 'sending'}
                 className={`w-full text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-[1.01] 
-                    ${status === 'sending' ? 'bg-gray-400 cursor-not-allowed' : 'bg-emerald-600 hover:bg-emerald-700'}`}
+                    ${status === 'sending' ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
             >
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
 
             {status === 'success' && (
-                <p className="text-emerald-600 font-medium text-center bg-emerald-50 py-2 rounded">Message sent successfully!</p>
+                <p className="text-blue-600 font-medium text-center bg-emerald-50 py-2 rounded">Message sent successfully!</p>
             )}
             {status === 'error' && (
                 <p className="text-red-600 font-medium text-center bg-red-50 py-2 rounded">Something went wrong. Please try again.</p>
@@ -201,11 +201,12 @@ const ContactPage = () => {
               </div>
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
-                  <SiMailboxdotorg size={20} />
+                  <SiGithub size={20} />
                 </div>
-                <h4 className="font-bold">Email</h4>
-                <p className="text-sm text-slate-500">civ-stack@coorp.tz</p>
+                <h4 className="font-bold">Civ-Stack Developers</h4>
+                <p className="text-sm text-slate-500"><a href=''>civ-stack.dev</a></p>
               </div>
+               
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
                   <BiSolidLocationPlus size={20} />
@@ -222,10 +223,10 @@ const ContactPage = () => {
               </div>
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
-                  <SiGithub size={20} />
+                  <SiMailboxdotorg size={20} />
                 </div>
-                <h4 className="font-bold">Civ-Stack Developers</h4>
-                <p className="text-sm text-slate-500"><a href=''>civ-stack.dev</a></p>
+                <h4 className="font-bold">Email</h4>
+                <p className="text-sm text-slate-500">civ-stack@coorp.tz</p>
               </div>
               <div className="p-6 bg-white rounded-2xl border border-slate-200 flex flex-col gap-3">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-blue-600">
