@@ -38,7 +38,7 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Building2 className="text-blue-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Shelter</h3>
-              <p className="text-slate-600 mb-6">Well structured building architectural designs for the sustainable organisation supply of housing service in mordern buildings suiting structural safety, quality material for each social class with minimal financial takeout. Aimly to assure quality buildings and shelter for every classes in the society.</p>
+              <p className="text-slate-600 mb-6">Software advancements will drive affordable and resilient housing through BIM (Building Information Modeling), AI-optimized design, and digital twins for modular/prefabricated construction, slashing costs and timelines by enabling precise planning, waste reduction, and faster assembly. Cloud-based project management platforms, 3D printing software, and automated permitting systems will streamline scaling of energy-efficient, low-carbon units while supporting community-focused upgrades and resilient builds in high-demand areas.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Financial budget determines shelter </li>
                 <li>• Disaster-Resilient Design</li>
@@ -60,7 +60,7 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Shirt className="text-orange-500 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Clothing</h3>
-              <p className="text-slate-600 mb-6">Circular fashion platforms connecting agricultural waste to textile production through GIS mapping. It includes the .</p>
+              <p className="text-slate-600 mb-6">Trend forecasting and demand prediction to curb overproduction, blockchain and digital product passports for transparent traceability, and software platforms enabling fiber-to-fiber recycling, resale/rental models, and circular supply chains. Design software incorporating sustainable parameters, along with data analytics for material innovation (e.g., bio-based textiles), will promote durable, repairable, and biodegradable options while enforcing regulations and consumer-driven accountability.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Sustainable Fabric Simulation</li>
                 <li>• Supply Chain Tracking</li>
