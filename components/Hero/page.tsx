@@ -40,8 +40,8 @@ const LandingPage = () => {
               <h3 className="text-2xl font-bold mb-3">Shelter</h3>
               <p className="text-slate-600 mb-6">Software advancements will drive affordable and resilient housing through BIM (Building Information Modeling), AI-optimized design, and digital twins for modular/prefabricated construction, slashing costs and timelines by enabling precise planning, waste reduction, and faster assembly. Cloud-based project management platforms, 3D printing software, and automated permitting systems will streamline scaling of energy-efficient, low-carbon units while supporting community-focused upgrades and resilient builds in high-demand areas.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
-                <li>• Financial budget determines shelter </li>
-                <li>• Disaster-Resilient Design</li>
+                <li>• Cloud streamlines project management. </li>
+                <li>• BIM integrates AI design.</li>
               </ul>
             </div>
 
@@ -51,8 +51,8 @@ const LandingPage = () => {
               <h3 className="text-2xl font-bold mb-3">Food</h3>
               <p className="text-slate-600 mb-6"> Solutions will rely heavily on AI-powered software for precision fermentation and alternative proteins, optimizing microbial strains, bioreactor conditions, and production yields to make cultivated or fermented options cheaper and more scalable. Integrated platforms using big data analytics, IoT sensors, blockchain for traceability, and machine learning-driven farm management (e.g., satellite monitoring tools) will enhance sustainable agriculture, reduce waste through predictive analytics, and enable circular systems with real-time supply chain transparency.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
-                <li>• Hydroponic Automation</li>
-                <li>• Waste-to-Food Logistics</li>
+                <li>• Analytics cuts food waste.</li>
+                <li>• Blockchain ensures supply transparency.</li>
               </ul>
             </div>
 
@@ -62,8 +62,8 @@ const LandingPage = () => {
               <h3 className="text-2xl font-bold mb-3">Clothing</h3>
               <p className="text-slate-600 mb-6">Trend forecasting and demand prediction to curb overproduction, blockchain and digital product passports for transparent traceability, and software platforms enabling fiber-to-fiber recycling, resale/rental models, and circular supply chains. Design software incorporating sustainable parameters, along with data analytics for material innovation (e.g., bio-based textiles), will promote durable, repairable, and biodegradable options while enforcing regulations and consumer-driven accountability.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
-                <li>• Sustainable Fabric Simulation</li>
-                <li>• Supply Chain Tracking</li>
+                <li>• AI predicts demand accurately.</li>
+                <li>• Data promotes durable textiles.</li>
               </ul>
             </div>
           </div>
