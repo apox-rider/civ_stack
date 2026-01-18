@@ -49,7 +49,7 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Sprout className="text-green-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Food</h3>
-              <p className="text-slate-600 mb-6">Smart agricultural technology like irrigation systems and vertical farming structures optimized by technicians for plant growth preserving the quality and quantity enhancement for the betterment of each and every farmer and the mass in demand for food supply</p>
+              <p className="text-slate-600 mb-6"> Solutions will rely heavily on AI-powered software for precision fermentation and alternative proteins, optimizing microbial strains, bioreactor conditions, and production yields to make cultivated or fermented options cheaper and more scalable. Integrated platforms using big data analytics, IoT sensors, blockchain for traceability, and machine learning-driven farm management (e.g., satellite monitoring tools) will enhance sustainable agriculture, reduce waste through predictive analytics, and enable circular systems with real-time supply chain transparency.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Hydroponic Automation</li>
                 <li>• Waste-to-Food Logistics</li>
@@ -60,7 +60,7 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Shirt className="text-orange-500 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Clothing</h3>
-              <p className="text-slate-600 mb-6">Circular fashion platforms connecting agricultural waste to textile production through GIS mapping.</p>
+              <p className="text-slate-600 mb-6">Circular fashion platforms connecting agricultural waste to textile production through GIS mapping. It includes the .</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Sustainable Fabric Simulation</li>
                 <li>• Supply Chain Tracking</li>
