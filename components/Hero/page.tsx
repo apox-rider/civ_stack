@@ -11,17 +11,17 @@ const LandingPage = () => {
           The Future of Infrastructure & Intelligence
         </span>
         <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
-          Where <span className="text-blue-600">Civil Engineering</span> <br /> 
+          Where <span className="text-blue-500">Civil Engineering</span> <br /> 
           Meets Digital Innovation.
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We build the physical foundations of tomorrow using the digital tools of today. Solving global challenges in Shelter, Food, and Sustainability through AI and Structural Engineering.
+          We build the physical foundations of tomorrow using the digital tools of today. Solving global challenges in Shelter, Food, and Sustainability through Structural Engineering digital solutions and proposals.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
             <a href='#solutions'>Explore Solutions<ArrowRight size={20} /></a>
           </button>
-          <button className="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition">
+          <button className="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition">
             <a href='/Contacts'>Contact the Founders</a>
           </button>
         </div>
@@ -38,9 +38,9 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Building2 className="text-blue-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Shelter</h3>
-              <p className="text-slate-600 mb-6">AI-powered building design tools and IoT sensors for structural health monitoring in flood-prone areas.</p>
+              <p className="text-slate-600 mb-6">Well structured building architectural designs for the sustainable organisation supply of housing service in mordern buildings suiting structural safety, quality material for each social class with minimal financial takeout. Aimly to assure quality buildings and shelter for every classes in the society.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
-                <li>• BIM & Digital Twins</li>
+                <li>• Financial budget determines shelter </li>
                 <li>• Disaster-Resilient Design</li>
               </ul>
             </div>
@@ -49,7 +49,7 @@ const LandingPage = () => {
             <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition group">
               <Sprout className="text-green-600 mb-6 group-hover:scale-110 transition" size={40} />
               <h3 className="text-2xl font-bold mb-3">Food</h3>
-              <p className="text-slate-600 mb-6">Smart irrigation systems and vertical farming structures optimized by predictive AI algorithms.</p>
+              <p className="text-slate-600 mb-6">Smart agricultural technology like irrigation systems and vertical farming structures optimized by technicians for plant growth preserving the quality and quantity enhancement for the betterment of each and every farmer and the mass in demand for food supply</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Hydroponic Automation</li>
                 <li>• Waste-to-Food Logistics</li>
