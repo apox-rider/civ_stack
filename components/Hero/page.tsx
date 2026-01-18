@@ -129,7 +129,7 @@ const LandingPage = () => {
 
                     <div className="mt-6 font-mono text-[12px] space-y-1">
                         <p className="text-green-400">{">"} Initializing AI Structural Audit...</p>
-                        <p className="text-slate-400">{">"} Sensor nodes  activating......</p>
+                        <p className="text-slate-400">{">"} Sensor nodes  activating.....</p>
                         <p className="text-slate-400">{">"} Sensor nodes 1-12 active. Connection stable.</p>
                         <p className="text-blue-400 animate-pulse">{">"} Optimizing load distribution for 2026 climate standards...</p>
                     </div>
