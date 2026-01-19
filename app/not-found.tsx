@@ -50,7 +50,7 @@ export default function NotFound() {
             href="/Contacts"
             className="px-10 py-5 rounded-xl font-medium text-lg text-slate-700 border-2 border-slate-300 hover:border-blue-600 hover:text-blue-600 transition-colors duration-300"
           >
-            Contact the Crew →
+            Contact our Crew →
           </Link>
         </div>
 
