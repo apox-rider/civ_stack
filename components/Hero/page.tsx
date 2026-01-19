@@ -31,7 +31,7 @@ const LandingPage = () => {
       <section id="solutions" className="px-8 py-24 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 id='solutions' className="text-3xl font-bold mb-4">Core Focus Areas</h2>
-          <p className="text-slate-500 mb-12 max-w-xl">Leveraging diploma-level expertise to create Minimum Viable Products for 2026's high-demand markets.</p>
+          <p className="text-slate-500 mb-12 max-w-xl">Leveraging our expertise to create Minimum Viable Products for 2026's high-demand markets.</p>
           
           <div className="grid md:grid-cols-3 gap-8">
 
