@@ -24,7 +24,7 @@ export default function NotFound() {
         </h2>
 
         <p className="mt-6 text-xl text-slate-600 max-w-xl mx-auto leading-relaxed">
-          The page you're looking for either doesn't exist yet, 
+          The page you're looking for either doesn't exist yet, or
           was moved to another foundation, or got lost during construction.
         </p>
 

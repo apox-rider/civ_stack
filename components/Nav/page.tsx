@@ -35,7 +35,7 @@ export default function Nav() {
 
         <div className="hidden md:flex gap-6 lg:gap-8 font-medium text-slate-600">
           <button onClick={goToHome} className="hover:text-blue-600 transition"> Home</button>
-          <button onClick={goToAbout} className="hover:text-blue-600 transition"> About-us</button>
+          <button onClick={goToAbout} className="hover:text-blue-600 transition"> About us</button>
           <button onClick={goToContacts} className="hover:text-blue-600 transition"> Contacts</button>
         </div>
 
