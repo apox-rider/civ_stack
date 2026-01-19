@@ -32,7 +32,7 @@ export default function NotFound() {
         <div className="mt-10 inline-flex items-center gap-3 px-6 py-4 bg-amber-100/60 backdrop-blur-sm rounded-xl border border-amber-200 text-slate-700">
           <HardHat className="text-amber-600" size={28} />
           <span className="font-medium">
-            Error 404: Foundation not detected 🏗️
+            Error 404 : Foundation not detected 🏗️
           </span>
         </div>
 
