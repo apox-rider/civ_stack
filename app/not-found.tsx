@@ -24,7 +24,7 @@ export default function NotFound() {
         </h2>
 
         <p className="mt-6 text-xl text-slate-600 max-w-xl mx-auto leading-relaxed">
-          The page you're looking for either doesn't exist yet, or
+          The page you're looking for either doesn't exist yet,
           was moved to another foundation, or got lost during construction.
         </p>
 
@@ -50,13 +50,13 @@ export default function NotFound() {
             href="/Contacts"
             className="px-10 py-5 rounded-xl font-medium text-lg text-slate-700 border-2 border-slate-300 hover:border-blue-600 hover:text-blue-600 transition-colors duration-300"
           >
-            Contact our Crew →
+            Contact the Crew →
           </Link>
         </div>
 
 
         <p className="mt-16 text-sm text-slate-500/70">
-          CivStack — Building the future, one stable foundation at a time
+          CivStack — Building the future, one stable foundation at a time 
         </p>
       </div>
     </div>
