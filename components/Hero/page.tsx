@@ -52,7 +52,7 @@ const LandingPage = () => {
               <p className="text-slate-600 mb-6"> Solutions will rely heavily on AI-powered software for precision fermentation and alternative proteins, optimizing microbial strains, bioreactor conditions, and production yields to make cultivated or fermented options cheaper and more scalable. Integrated platforms using big data analytics, IoT sensors, blockchain for traceability, and machine learning-driven farm management (e.g., satellite monitoring tools) will enhance sustainable agriculture, reduce waste through predictive analytics, and enable circular systems with real-time supply chain transparency.</p>
               <ul className="space-y-2 text-sm text-slate-500 font-medium">
                 <li>• Analytics cuts food waste.</li>
-                <li>• Blockchain ensures supply transparency.</li>
+                <li>• Blockchain ensures supply transparency. </li>
               </ul>
             </div>
 
