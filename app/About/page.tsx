@@ -95,7 +95,7 @@ const AboutUsPage = () => {
 
       <section className="px-8 py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6">Our Guiding Principles</h2>
+          <h2 className="text-4xl font-bold text-center mb-6">Our Guiding Principles </h2>
           <p className="text-slate-600 text-center text-lg mb-16 max-w-3xl mx-auto">
             These values define how deeply we commit to our goals — every line of code, every structural calculation, every partnership.
           </p>
@@ -105,7 +105,7 @@ const AboutUsPage = () => {
               <HeartHandshake className="text-blue-600 mb-6 group-hover:scale-110 transition" size={44} />
               <h3 className="text-2xl font-bold mb-4">Impact First</h3>
               <p className="text-slate-600">
-                Every decision is measured by real-world human & environmental benefit — not hype or short-term metrics.
+                Every decision is measured by real-world human & environmental benefit — not hype or short-term metrics .
               </p>
             </div>
 
