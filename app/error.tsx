@@ -40,7 +40,7 @@ export default function Error({
         <p className="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed">
           Something went wrong on our end while trying to load this page.<br />
           Our engineering team has been notified and we're already reinforcing the foundation.
-          Please be patient and try again later 
+          Please be patient and try again later. 
         </p>
 
 
