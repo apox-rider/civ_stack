@@ -1,4 +1,5 @@
-import { Si1Dot1Dot1Dot1, SiGithub, SiInstagram, SiLinkedin, SiStackbit, SiTheboringcompany, SiWhatsapp, SiYoutube } from "react-icons/si";
+import { Si1Dot1Dot1Dot1, SiGithub, SiInstagram, SiStackbit, SiTheboringcompany, SiWhatsapp, SiYoutube } from "react-icons/si";
+import { SlSocialLinkedin } from "react-icons/sl";
 
  export default function Footer(){
     return(
@@ -25,7 +26,7 @@ import { Si1Dot1Dot1Dot1, SiGithub, SiInstagram, SiLinkedin, SiStackbit, SiThebo
             <div className="flex justify-center md:justify-end gap-6">
               
               <div className="flex gap-6 text-sm font-medium text-slate-600">
-            <a href="#" className="hover:text-blue-600"><SiLinkedin size={35}/></a>
+            <a href="#" className="hover:text-blue-600"><SlSocialLinkedin size={35}/></a>
             <a href="#" className="hover:text-blue-600"><SiGithub size={35}/></a>
             <a href="#" className="hover:text-blue-600"><SiYoutube size={35}/></a>
             <a href="#" className="hover:text-blue-600"><SiInstagram size={35}/></a>
